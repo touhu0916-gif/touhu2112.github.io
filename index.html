@@ -2,93 +2,107 @@
 <html lang="ja">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>とうふの部屋</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>とうふの部屋</title>
+  <meta name="description" content="とうふの部屋へようこそ。プロフィール、掲示板、Mirrativ情報、AI作品などをまとめた個人サイトです。">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-<header>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">とうふの部屋</h1>
 
-<h1>とうふの部屋</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="profile.html">プロフィール</a></li>
+          <li><a href="board.html">掲示板</a></li>
+          <li><a href="mirrativ.html">Mirrativ情報</a></li>
+          <li><a href="ai.html">AI作品</a></li>
+          <li><a href="links.html">リンク</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<nav>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-sub">個人サイト</p>
+        <h2>ようこそ、とうふの部屋へ</h2>
+        <p class="hero-text">
+          配信、思考、AI作品、ゲーム関連のことを少しずつまとめていく場所です。
+        </p>
 
-<ul>
+        <div class="hero-buttons">
+          <a href="profile.html" class="button primary-button">プロフィールを見る</a>
+          <button id="moreButton" class="button secondary-button">もっと見る</button>
+        </div>
+      </div>
+    </section>
 
-<li><a href="#">ホーム</a></li>
-<li><a href="#">プロフィール</a></li>
-<li><a href="#">ブログ</a></li>
-<li><a href="#">AI作品</a></li>
-<li><a href="#">リンク</a></li>
+    <section class="section">
+      <div class="section-heading">
+        <h2>このサイトで見れるもの</h2>
+        <p>現在準備中の内容も含めて、今後追加していく予定の項目です。</p>
+      </div>
 
-</ul>
+      <div class="cards">
 
-</nav>
+        <article class="card">
+          <h3>プロフィール</h3>
+          <p>とうふについての紹介や、好きなこと、活動内容などをまとめます。</p>
+          <a href="profile.html" class="card-link">見る</a>
+        </article>
 
-</header>
+        <article class="card">
+          <h3>掲示板</h3>
+          <p>感想やひとこと、交流用の場所として使う予定のページです。</p>
+          <a href="board.html" class="card-link">見る</a>
+        </article>
 
+        <article class="card">
+          <h3>Mirrativ情報</h3>
+          <p>配信に関する情報、リンク、活動記録などを載せていくページです。</p>
+          <a href="mirrativ.html" class="card-link">見る</a>
+        </article>
 
+        <article class="card">
+          <h3>AI作品</h3>
+          <p>AIで作った画像や文章、音楽などをまとめるページです。</p>
+          <a href="ai.html" class="card-link">見る</a>
+        </article>
 
-<section class="hero">
+        <article class="card">
+          <h3>リンク</h3>
+          <p>SNSや関連ページへのリンクを整理して掲載するページです。</p>
+          <a href="links.html" class="card-link">見る</a>
+        </article>
 
-<h2>Welcome</h2>
+        <article class="card">
+          <h3>ゲーム</h3>
+          <p>ゲーム関連の記録やメモ、まとめなどを追加していく予定です。</p>
+          <a href="#" class="card-link disabled-link">準備中</a>
+        </article>
 
-<p>とうふの部屋へようこそ</p>
+      </div>
+    </section>
 
-<button onclick="alert('準備中です')">もっと見る</button>
+    <section class="info-box" id="moreInfo">
+      <h2>お知らせ</h2>
+      <p>
+        とうふの部屋は現在制作中です。これから少しずつページや機能を追加していきます。
+      </p>
+    </section>
+  </main>
 
-</section>
+  <footer class="site-footer">
+    <p>© 2026 とうふの部屋</p>
+  </footer>
 
-
-
-<section class="cards">
-
-<div class="card">
-
-<h3>ブログ</h3>
-
-<p>日常や思考を書いていきます。</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>AI作品</h3>
-
-<p>AI生成コンテンツを公開。</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>ゲーム</h3>
-
-<p>ゲーム関連まとめ。</p>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 tofu room</p>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
